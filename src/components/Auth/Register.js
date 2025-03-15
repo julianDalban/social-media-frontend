@@ -48,6 +48,16 @@ const Register = () => {
                     />
                 </div>
                 <div className="form-group">
+                    <label htmlFor="email">Email</label>
+                    <input
+                        type="email"
+                        id="email"
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
+                        required
+                    />
+                </div>
+                <div className="form-group">
                     <label htmlFor="password">Password</label>
                     <input
                         type="password"
@@ -62,7 +72,7 @@ const Register = () => {
                 </button>
             </form>
             <p>
-                Already havn an account?{' '}
+                Already have an account?{' '}
                 <button onClick={() => navigate('/login')}>Login</button>
             </p>
         </div>

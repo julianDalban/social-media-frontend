@@ -2,7 +2,7 @@ import React, { useState, useEffect, use } from "react";
 import { Link, useAsyncError } from "react-router-dom";
 import { postService } from "../../services/api";
 import { useAuth } from "../../contexts/AuthContext";
-import CommentSection from '/CommentSection';
+import CommentSection from './CommentSection';
 
 const PostItem = ({ post }) => {
     const [isLiked, setIsLiked] = useState(null);

@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { postService } from "../services/api";
 import { useAuth } from "../contexts/AuthContext";
+import CreatePost from "../components/Post/CreatePost";
+import PostList from "../components/Post/PostList";
+import TaskWidget from '../components/Task/TaskWidget';
 
 const Home = () => {
     const [posts, setPosts] = useState([]);

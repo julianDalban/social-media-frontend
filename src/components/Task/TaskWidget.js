@@ -4,9 +4,9 @@ import TaskItem from './TaskItem';
 const TaskWidget = () => {
     const [tasks, setTasks] = useState([
         { id: 1, title: 'Complete homework', reward: '15m', completed: false },
-    { id: 2, title: 'Read for 30 minutes', reward: '20m', completed: false },
-    { id: 3, title: 'Go for a walk', reward: '25m', completed: true },
-    { id: 4, title: 'Practice piano', reward: '15m', completed: false }
+        { id: 2, title: 'Read for 30 minutes', reward: '20m', completed: false },
+        { id: 3, title: 'Go for a walk', reward: '25m', completed: true },
+        { id: 4, title: 'Practice piano', reward: '15m', completed: false }
     ]);
 
     const [newTaskTitle, setNewTaskTitle] = useState('');
@@ -42,7 +42,7 @@ const TaskWidget = () => {
                     <TaskItem
                         key={task.id}
                         task={task}
-                        onComplete={() => handleCompleteTask(taskId)}
+                        onComplete={() => handleCompleteTask(task.id)}
                     />
                 })}
             </div>
