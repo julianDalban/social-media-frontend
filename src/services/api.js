@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const API_URL = 'http://127.0.0.1:5002/api' // change based on API port
+const API_URL = 'https://social-media-api-73bqxnmzma-uc.a.run.app/api' // change based on API port
 
 // create axios instance
 const api = axios.create({
